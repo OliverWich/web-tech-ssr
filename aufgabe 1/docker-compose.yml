@@ -1,0 +1,10 @@
+name: ssr-workshop
+services:
+  prerender:
+    image: ghcr.io/denwae/ssr-prerender
+    ports:
+      - "8080:80"
+  client-side:
+    image: ghcr.io/denwae/ssr-client-side
+    ports:
+      - "8081:80"
