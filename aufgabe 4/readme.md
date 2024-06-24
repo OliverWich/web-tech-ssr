@@ -1,4 +1,4 @@
-# Aufgabe 3 - Performance vergleich
+# Aufgabe 4 - Performance vergleich
 
 Nutzt den Chrome Performance Tab um die Performance der verschiedenen Anwendungen zu Vergleichen.
 Die Anwendungen werden mit `docker compose up -d gestartet`.

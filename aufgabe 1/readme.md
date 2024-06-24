@@ -1,6 +1,6 @@
 # Aufgabe 1 - Vergleich der Antwort zwischen Pre-Rendering und CSR
 
-Vergleicht die Ergebnisse der Netzwerkanalyse für beide Anwendungen. Was fällt auf? Welche Antwort liefern beide Anwendungen?
+Vergleicht die Ergebnisse der Netzwerkanalyse für beide Anwendungen. Was fällt auf? Welche Antwort liefern beide Anwendungen? Wie unterscheidet sich die DOM zwischen beiden Anwendungen?
 
 Startet die zwei Docker Container mit `docker compose up -d`. 
 
