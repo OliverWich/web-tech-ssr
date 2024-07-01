@@ -9,7 +9,7 @@ Die nötigen Daten sind in der Datei `routes/cats/cats.ts` zu finden.
 
 ## A) Implementieren der Übersicht
 
-Es soll eine Übersicht aller Bilder erstellt werden. Die Übersicht ist im Ordner `routes/cats` zu finden. Dabei müssen 
+Es soll eine Übersicht aller Bilder erstellt werden. Die Übersicht ist im Ordner `routes/` zu finden. Dabei müssen 
 die folgenden Features implementiert werden:
 
 - Anzeige des Titels
