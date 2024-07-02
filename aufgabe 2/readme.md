@@ -27,6 +27,6 @@ folgende Features implementiert werden:
 - Anzeige aller nötigen Daten
 - Navigation aus der Detailansicht auf die vorherige Seite der Übersicht
 
-## C) Implementieren der Suche
+## Bonus) Implementieren der Suche
 
 Der Benutzer soll nach den passenden Bildern Suchen können.
