@@ -4,9 +4,9 @@
 
     export let data;
 
-    let previousPage = "/";
+    let previousPage : string | undefined;
     afterNavigate(({from}) => {
-        previousPage = from?.url.toString() || previousPage;
+        previousPage = from?.url.toString();
     })
 </script>
 
@@ -14,7 +14,9 @@
     <NavbarBrand href="/">Der Katzenbrowser</NavbarBrand>
     <Nav>
         <NavItem>
-            <NavLink href="{previousPage}">Zur vorherigen Seite</NavLink>
+            {#if previousPage}
+                <NavLink href="{previousPage}">Zur vorherigen Seite</NavLink>
+            {/if}
         </NavItem>
     </Nav>
 </Navbar>
