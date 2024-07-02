@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
     import {Image, Nav, Navbar, NavbarBrand, NavItem, NavLink} from "@sveltestrap/sveltestrap";
     import {afterNavigate} from "$app/navigation";
 
+    export let data;
 
+    let previousPage = "/";
     afterNavigate(({from}) => {
-        //hier kann die URL von der vorherigen Seite geholt werden
+        previousPage = from?.url.toString() || previousPage;
     })
 </script>
 
@@ -12,18 +14,21 @@
     <NavbarBrand href="/">Der Katzenbrowser</NavbarBrand>
     <Nav>
         <NavItem>
-            <!-- Link zur vorherigen Seite hinzufügen-->
-            <NavLink>Zur vorherigen Seite</NavLink>
+            <NavLink href="{previousPage}">Zur vorherigen Seite</NavLink>
         </NavItem>
     </Nav>
 </Navbar>
 
 <div class="container">
-    <!-- Hier die nötigen Daten ausgeben-->
-    <h1 class="text-center"></h1>
+    <h1 class="text-center">{data.alt}</h1>
 
     <div class="d-flex flex-row justify-content-center">
-        <Image style="max-height: 75vh" fluid></Image>
+        <Image src="{data.image}" style="max-height: 75vh" fluid></Image>
     </div>
 
+    <span>Katzen: {data.picturedCats}</span>
+    <br/>
+    <span>Datum: {data.date}</span>
+    <br/>
+    <span>Beschreibung: {data.description}</span>
 </div>
